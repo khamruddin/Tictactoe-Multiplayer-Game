@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'Slave2'}
+    agent {label 'Slave'}
 
     stages {
         stage('Code pull') {
@@ -23,7 +23,7 @@ pipeline {
                 //expression { return params.current_status == "closed" && params.merged == true }
             //}
             steps {
-                bat 'flutter build apk --debug --ignore-deprecation'
+                sh 'flutter build apk --debug --ignore-deprecation'
             
             }
         }
