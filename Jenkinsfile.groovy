@@ -23,21 +23,18 @@ pipeline {
                 //expression { return params.current_status == "closed" && params.merged == true }
             //}
             steps {
-                sh '''
-            #!/bin/sh
+                bat 'flutter build apk --debug --ignore-deprecation'
             
-            flutter build apk --debug --ignore-deprecation
-            '''
             }
         }
-        stage('Test') {
+        //stage('Test') {
             //when {
                 //expression { return params.current_status == "closed" && params.merged == true }
            // }
-            steps {
-               sh 'flutter test'
-            }
-        }
+          //  steps {
+            //   sh 'flutter test'
+            //}
+        //}
         //stage('Publish') {
             //when {
                 //expression { return params.current_status == "closed" && params.merged == true }
