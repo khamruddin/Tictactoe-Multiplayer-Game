@@ -23,7 +23,13 @@ pipeline {
                 //expression { return params.current_status == "closed" && params.merged == true }
             //}
             steps {
-                sh 'flutter build apk --debug --ignore-deprecation'
+                
+                  sh '''
+                
+              #!/bin/bash
+                
+              flutter build apk --debug --ignore-deprecation
+              '''
             
             }
         }
