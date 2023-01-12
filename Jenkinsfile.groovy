@@ -28,7 +28,7 @@ pipeline {
                 
               #!/bin/bash
                 
-              flutter build apk 
+              flutter build apk --debug
               flutter build apk --no-sound-null-safety
               '''
             
