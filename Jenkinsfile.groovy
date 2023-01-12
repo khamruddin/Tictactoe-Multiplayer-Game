@@ -27,9 +27,9 @@ pipeline {
                   sh '''
                 
               #!/bin/bash
-                
-              flutter build apk --debug
               flutter build apk --no-sound-null-safety
+              flutter build apk --debug --ignore-deprecation
+              //flutter build apk --no-sound-null-safety
               '''
             
             }
