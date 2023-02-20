@@ -5,8 +5,9 @@ buildscript {
         url "http://3.16.187.129:8081/repository/myrepo-1/"
         allowInsecureProtocol = true
           credentials {
-          username System.getenv('admin')
-          password System.getenv('admin@123')
+          
+          username "admin"
+          password "admin@123"
             }
         }
         
@@ -24,8 +25,8 @@ allprojects {
         url "http://3.16.187.129:8081/repository/myrepo-1/"
         allowInsecureProtocol = true
           credentials {
-          username System.getenv('admin')
-          password System.getenv('admin@123')
+          username "admin"
+          password "admin@123"
             }
         }
         
