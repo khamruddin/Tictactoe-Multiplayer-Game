@@ -9,6 +9,8 @@ buildscript {
         metadataSources {
             mavenPom {
                   gradleMetadata = false
+                  }
+                  }
           credentials {
           
           username "admin"
@@ -34,6 +36,8 @@ allprojects {
         metadataSources {
             mavenPom {
                   gradleMetadata = false
+                  }
+                  }
           credentials {
           username "admin"
           password "admin@123"
