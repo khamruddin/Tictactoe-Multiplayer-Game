@@ -1,8 +1,14 @@
 buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
-        google()
-        mavenCentral()
+    maven {
+        url "http://3.128.32.225:8081/repository/repo/"
+          credentials {
+          username System.getenv('admin')
+          password System.getenv('admin@123')
+            }
+        }
+        
     }
 
     dependencies {
@@ -13,8 +19,14 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        mavenCentral()
+    maven {
+        url "http://3.128.32.225:8081/repository/repo/"
+          credentials {
+          username System.getenv('admin')
+          password System.getenv('admin@123')
+            }
+        }
+        
     }
 }
 
