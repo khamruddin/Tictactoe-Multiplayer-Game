@@ -6,6 +6,9 @@ buildscript {
     maven {
         url "http://3.16.187.129:8081/repository/maven-central/"
         allowInsecureProtocol = true
+        metadataSources {
+            mavenPom {
+                  gradleMetadata = false
           credentials {
           
           username "admin"
@@ -28,6 +31,9 @@ allprojects {
     maven {
         url "http://3.16.187.129:8081/repository/maven-central/"
         allowInsecureProtocol = true
+        metadataSources {
+            mavenPom {
+                  gradleMetadata = false
           credentials {
           username "admin"
           password "admin@123"
