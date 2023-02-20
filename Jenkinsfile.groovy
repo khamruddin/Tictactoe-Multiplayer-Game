@@ -18,7 +18,7 @@ pipeline {
                 //}
             //}
             steps {
-                git 'https://github.com/khamruddin/Tictactoe-Multiplayer-Game.git'
+                #git 'https://github.com/khamruddin/Tictactoe-Multiplayer-Game.git'
             }
         }
         stage('Build') {
