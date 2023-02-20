@@ -1,7 +1,7 @@
 buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
-     //gradlePluginPortal()
+    gradlePluginPortal()
     jcenter()
     maven {
         url "http://3.16.187.129:8081/repository/central1/"
@@ -23,7 +23,7 @@ buildscript {
 
 allprojects {
     repositories {
-    //gradlePluginPortal()
+    gradlePluginPortal()
     jcenter()
     maven {
         url "http://3.16.187.129:8081/repository/central1/"
