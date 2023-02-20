@@ -1,6 +1,7 @@
 buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
+    mavenCentral()
     maven {
         url "http://3.16.187.129:8081/repository/new/"
         allowInsecureProtocol = true
@@ -21,6 +22,7 @@ buildscript {
 
 allprojects {
     repositories {
+     mavenCentral()
     maven {
         url "http://3.16.187.129:8081/repository/new/"
         allowInsecureProtocol = true
