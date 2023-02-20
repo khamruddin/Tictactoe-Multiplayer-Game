@@ -1,18 +1,17 @@
 buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
-    google()
-    mavenCentral()
     
-    //maven {
-        //url "http://3.16.187.129:8081/repository/central1/"
-        //allowInsecureProtocol = true
-          //credentials {
+    
+    maven {
+        url "http://3.16.187.129:8081/repository/central1/"
+        allowInsecureProtocol = true
+          credentials {
           
-          //username "admin"
-          //password "admin@123"
-            //}
-        //}
+          username "admin"
+          password "admin@123"
+            }
+        }
         
     }
 
@@ -24,17 +23,16 @@ buildscript {
 
 allprojects {
     repositories {
-    google()
-    mavenCentral()
+    
    
-    //maven {
-        //url "http://3.16.187.129:8081/repository/central1/"
-        //allowInsecureProtocol = true
-          //credentials {
-          //username "admin"
-          //password "admin@123"
-            //}
-        //}
+    maven {
+        url "http://3.16.187.129:8081/repository/central1/"
+        allowInsecureProtocol = true
+          credentials {
+          username "admin"
+          password "admin@123"
+            }
+        }
         
     }
 }
