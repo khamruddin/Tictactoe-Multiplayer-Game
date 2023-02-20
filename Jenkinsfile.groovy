@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    environment {
+        #RR_CREDS = credentials('')
+    
+    }
     stages {
         stage('Code pull') {
            // when {
