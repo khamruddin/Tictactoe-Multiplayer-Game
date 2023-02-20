@@ -14,9 +14,9 @@ pipeline {
                    // return params.current_status == "closed" && params.merged == true
                 //}
             //}
-            steps {
+            //steps {
                 //git 'https://github.com/khamruddin/Tictactoe-Multiplayer-Game.git'
-            }
+            //}
         }
         stage('Build') {
             //when {
