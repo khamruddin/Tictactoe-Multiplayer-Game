@@ -2,7 +2,7 @@ buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
     maven {
-        url "http://3.128.32.225:8081/repository/repo/"
+        url "http://3.16.187.129:8081/repository/myrepo-1/"
           credentials {
           username System.getenv('admin')
           password System.getenv('admin@123')
@@ -20,7 +20,7 @@ buildscript {
 allprojects {
     repositories {
     maven {
-        url "http://3.128.32.225:8081/repository/repo/"
+        url "http://3.16.187.129:8081/repository/myrepo-1/"
           credentials {
           username System.getenv('admin')
           password System.getenv('admin@123')
