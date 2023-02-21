@@ -4,7 +4,7 @@ buildscript {
     
     
     maven {
-        url "http://3.16.187.129:8081/repository/maven-central/"
+        url "http://3.16.187.129:8081/repository/google/"
         allowInsecureProtocol = true
         
           credentials {
@@ -27,7 +27,7 @@ allprojects {
     
    
     maven {
-        url "http://3.16.187.129:8081/repository/maven-central/"
+        url "http://3.16.187.129:8081/repository/google/"
         allowInsecureProtocol = true
         
           credentials {
