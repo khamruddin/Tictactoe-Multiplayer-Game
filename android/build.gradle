@@ -7,8 +7,8 @@ buildscript {
         
           credentials {
           
-          username "admin11"
-          password "admin@1231"
+          username "admin"
+          password "admin@123"
             }
         }
         
@@ -27,8 +27,8 @@ allprojects {
         allowInsecureProtocol = true
         
           credentials {
-          username "admin11"
-          password "admin@12311"
+          username "admin"
+          password "admin@123"
             }
         }
         
