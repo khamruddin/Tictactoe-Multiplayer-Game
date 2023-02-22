@@ -11,6 +11,16 @@ buildscript {
             }
         }
         
+      maven {
+        url "http://3.16.187.129:8081/repository/new/"
+        allowInsecureProtocol = true
+        credentials {
+         
+          username "admin"
+          password "admin@123"
+            }
+        }
+        
     }
 
     dependencies {
@@ -25,6 +35,15 @@ allprojects {
         url "http://3.16.187.129:8081/repository/maven-central/"
         allowInsecureProtocol = true
         credentials {
+          username "admin"
+          password "admin@123"
+            }
+        }
+      maven {
+        url "http://3.16.187.129:8081/repository/new/"
+        allowInsecureProtocol = true
+        credentials {
+         
           username "admin"
           password "admin@123"
             }
