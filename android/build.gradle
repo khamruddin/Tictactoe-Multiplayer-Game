@@ -2,11 +2,10 @@ buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
       maven {
-        url "http://3.16.187.129:8081/repository/google"
+        url "http://3.16.187.129:8081/repository/maven-central/"
         allowInsecureProtocol = true
-        
-          credentials {
-          
+        credentials {
+         
           username "admin"
           password "admin@123"
             }
@@ -23,10 +22,9 @@ buildscript {
 allprojects {
     repositories {
       maven {
-        url "http://3.16.187.129:8081/repository/google"
+        url "http://3.16.187.129:8081/repository/maven-central/"
         allowInsecureProtocol = true
-        
-          credentials {
+        credentials {
           username "admin"
           password "admin@123"
             }
